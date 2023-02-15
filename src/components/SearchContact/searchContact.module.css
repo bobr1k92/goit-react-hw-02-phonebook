@@ -1,9 +1,8 @@
-.searchContainer {
+/* .searchContainer {
     display: flex;
     flex-direction: column;
-};
+}; */
 
-.label {
-    display: flex;
-    flex-direction: column;
+label, input {
+    display:block;
 }

@@ -3,8 +3,8 @@ import css from './searchContact.module.css'
 
 const SearchContact = ({id}) => (
 <div className={css.searchContainer}>
-    <label claasName={css.label} htmlFor="">Find contacts by name</label>
-    <input type="text" />
+    <label claasName={css.search} htmlFor="">Find contacts by name<input className={css.input} type="text" /></label>
+    
     
 </div>
 );

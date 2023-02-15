@@ -1,3 +1,4 @@
+import { Component } from 'react';
 import css from './container.module.css';
 
 const Container = ({children}) => (
