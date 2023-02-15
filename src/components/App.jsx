@@ -1,35 +1,17 @@
 import { Component } from "react";
 // import { nanoid } from 'nanoid'
+import Container from "./GlobalContainer/Container";
 import Form from "./Form/Form";
+import SearchContact from './SearchContact/SearchContact';
+import TodoList from "./TodoList/TodoList";
+import contacts from './contacts.json';
 
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      <SignContactForm/>
-    </div>
-  );
-};
+
+
 
 const INITIAL_STATE = {
-  contacts: [
-    {id: 'id-1', name: 'Rosie Simpson', number: '459-12-56'},
-  {id: 'id-2', name: 'Hermione Kline', number: '443-89-12'},
-  {id: 'id-3', name: 'Eden Clements', number: '645-17-79'},
-  {id: 'id-4', name: 'Annie Copeland', number: '227-91-26'},
-  ],
+  contacts,
 };
-
-
 class SignContactForm extends Component {
   state = {
     ...INITIAL_STATE,
@@ -44,7 +26,22 @@ class SignContactForm extends Component {
     const { contacts, name, number, } = this.state;
 
     return (
+      <Container>
+        <h2>Phonebook</h2>
       <Form onSubmit={this.formSubmitData}/>
+      <h2>Contacts</h2>
+      <SearchContact/>
+      <TodoList todos={contacts}/>
+      </Container>
     );
   }
 }
+
+export const App = () => {
+  return (
+    <div>
+      <SignContactForm/>
+    </div>
+  );
+};
+

@@ -1,0 +1,15 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+};
+
+ul {
+    list-style: none;
+}
