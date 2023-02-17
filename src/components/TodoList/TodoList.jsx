@@ -1,5 +1,5 @@
-import { nanoid } from "nanoid";
-import { Component } from "react";
+// import { nanoid } from "nanoid";
+// import { Component } from "react";
 import css from './todolist.module.css';
 // import { IoMdTrash } from "react-icons/io";
 

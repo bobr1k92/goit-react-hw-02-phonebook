@@ -1,4 +1,4 @@
-import { Component } from "react";
+// import { Component } from "react";
 import css from './searchContact.module.css';
 
 const SearchContact = ({value, onSearch}) => (
