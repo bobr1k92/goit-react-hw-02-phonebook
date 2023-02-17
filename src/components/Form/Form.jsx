@@ -11,6 +11,7 @@ class Form extends Component {
     handleChange = e => {
         const  { name, value } = e.currentTarget
         this.setState({ [name]: value });
+        console.log(value);
       };
 
       handleSubmit = e => {
@@ -24,11 +25,12 @@ class Form extends Component {
 
     render(){
         return ( 
-        <form className={css.form} onChange={this.handleSubmit}>
+        <form className={css.form} onSubmit={this.handleSubmit}>
             <label htmlFor="">Name
             <input
       type="text"
       name="name"
+      value={this.state.value}
       pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
       title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
       required

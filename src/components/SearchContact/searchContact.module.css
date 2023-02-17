@@ -6,3 +6,8 @@
 label, input {
     display:block;
 }
+
+
+.searchInput {
+    padding-bottom: 10px;
+}

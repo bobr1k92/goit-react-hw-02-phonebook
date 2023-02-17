@@ -1,13 +1,18 @@
 import { Component } from "react";
-import css from './searchContact.module.css'
+import css from './searchContact.module.css';
 
-const SearchContact = ({id}) => (
+const SearchContact = ({value, onSearch}) => (
 <div className={css.searchContainer}>
-    <label claasName={css.search} htmlFor="">Find contacts by name<input className={css.input} type="text" /></label>
+    <label className={css.searchTitle} htmlFor="">Find contacts by name
+    <input 
+    className={css.searchInput} 
+    type="text" value={value}
+    name="search"
+    onChange={onSearch}/>
+    </label>
     
     
 </div>
 );
-
 
 export default SearchContact
