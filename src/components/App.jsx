@@ -26,7 +26,7 @@ class SignContactForm extends Component {
   };
 
   state = {
-    contacts: this.props.initialContacts,
+    contacts,
     filter: '',
   };
 
