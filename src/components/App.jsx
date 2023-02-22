@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { nanoid } from 'nanoid';
-import PropTypes from 'prop-types';
 import Container from "./GlobalContainer/Container";
 import Form from "./Form/Form";
 import SearchContact from './SearchContact/SearchContact';
