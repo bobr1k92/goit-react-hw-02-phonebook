@@ -82,9 +82,9 @@ class SignContactForm extends Component {
 
 export const App = () => {
   return (
-    <Container>
+    <div>
       <SignContactForm/>
-    </Container>
+    </div>
   );
 };
 
