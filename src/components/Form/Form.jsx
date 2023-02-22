@@ -42,8 +42,8 @@ class Form extends Component {
     render(){
         return ( 
         <form className={css.form} onSubmit={this.handleSubmit}>
-            <label htmlFor="">Name
-            <input
+            <label className={css.formlabel} htmlFor="">Name
+            <input className={css.formInput}
       type="text"
       name="name"
       value={this.state.name}
@@ -54,9 +54,9 @@ class Form extends Component {
     />
             </label>
     
-            <label htmlFor="">
+            <label className={css.formlabel} htmlFor="">
             Number
-              <input
+              <input className={css.formInput}
       type="tel"
       name="number"
       value={this.state.number}
@@ -66,7 +66,7 @@ class Form extends Component {
       onChange={this.handleChange}
     />
           </label>
-            <button type="submit">Add contact</button>
+            <button className={css.formBtn}type="submit">Add contact</button>
           </form>
           );
 

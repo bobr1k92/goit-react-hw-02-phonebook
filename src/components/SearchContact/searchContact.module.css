@@ -3,11 +3,20 @@
     flex-direction: column;
 }; */
 
-label, input {
+.searchLabel {
     display:block;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 10px;
 }
 
-
 .searchInput {
-    padding-bottom: 10px;
+    display:block;
+    width: 200px;
+    font-size: 20px;
+    height: 15px;
+    border-radius: 4px;
+    padding: 10px 10px;
 }
