@@ -1,7 +1,8 @@
-/* .searchContainer {
+.searchContainer {
     display: flex;
     flex-direction: column;
-}; */
+    align-items: center;
+};
 
 .searchLabel {
     display:block;
