@@ -1,4 +1,4 @@
-// import { Component } from "react";
+import PropTypes from 'prop-types';
 import css from './searchContact.module.css';
 
 const SearchContact = ({value, onSearch}) => (
@@ -14,4 +14,10 @@ const SearchContact = ({value, onSearch}) => (
 </div>
 );
 
-export default SearchContact
+
+SearchContact.propTypes = {
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+  };
+
+  export default SearchContact;

@@ -22,22 +22,9 @@ class Form extends Component {
         this.reset();
       };
     
-      // Очищення полів форми після відправки
       reset = () => {
         this.setState({ name: '', number: '' });
       };
-
-      // handleSubmit = e => {
-      //   e.preventDefault();
-
-      //   this.props.onSubmit(this.state);
-
-      //   this.reset();
-      // };
-
-      // reset = () => {
-      //   this.setState(this.state);
-      // };
 
     render(){
         return ( 

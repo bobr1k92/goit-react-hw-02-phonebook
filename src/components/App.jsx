@@ -11,6 +11,7 @@ import contacts from './contacts.json';
 
 
 class SignContactForm extends Component {
+
   state = {
     contacts,
     filter: '',
