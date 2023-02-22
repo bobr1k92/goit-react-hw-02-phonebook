@@ -1,7 +1,12 @@
 import { Component } from "react";
+import PropTypes from 'prop-types';
 import css from './form.module.css'
 
 class Form extends Component {
+
+  static propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+  };
 
     state = { 
     name: '',

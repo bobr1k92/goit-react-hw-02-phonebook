@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { nanoid } from 'nanoid';
+import PropTypes from 'prop-types';
 import Container from "./GlobalContainer/Container";
 import Form from "./Form/Form";
 import SearchContact from './SearchContact/SearchContact';
@@ -11,9 +12,21 @@ import contacts from './contacts.json';
 
 
 class SignContactForm extends Component {
+  static defaultProps = {
+    initialContacts: [],
+  };
+
+  static propTypes = {
+    initialContacts: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        number: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+  };
 
   state = {
-    contacts,
+    contacts: this.props.initialContacts,
     filter: '',
   };
 
