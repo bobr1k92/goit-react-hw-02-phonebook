@@ -69,7 +69,7 @@ class SignContactForm extends Component {
     
 
     return (
-      <Container>
+    <Container>
         <h2>Phonebook</h2>
       <Form onSubmit={this.addContact}/>
       <h2>Contacts</h2>
@@ -82,9 +82,9 @@ class SignContactForm extends Component {
 
 export const App = () => {
   return (
-    <div>
+    <Container>
       <SignContactForm/>
-    </div>
+    </Container>
   );
 };
 
