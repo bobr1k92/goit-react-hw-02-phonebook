@@ -12,19 +12,7 @@ import contacts from './contacts.json';
 
 
 class SignContactForm extends Component {
-  static defaultProps = {
-    initialContacts: [],
-  };
-
-  static propTypes = {
-    initialContacts: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        number: PropTypes.string.isRequired,
-      })
-    ).isRequired,
-  };
-
+ 
   state = {
     contacts,
     filter: '',
